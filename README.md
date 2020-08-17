@@ -17,3 +17,6 @@ Assembly the schematics as shown in the figure. Assure that the ultrasonic humid
 ` to the desire target relative humidty and compile the file (sketch) into the microcontroller. Turn on the pump. The pump will be on until the target relative humidty is reached and will try to keep it as stable as possible.
 
 `CCSerial2SQLite.py`can be used for saving the RH data coming from the Arduino to a SQLite database in the computer for using it the port must be modified depending on the port where the USB is connected.
+
+### Uses
+This control system with a 60 W pump and a 25W ultrasonic humidifer and a reservoir made using a pipe with a diameter of 15 cm and a height of 1 m can be effecively used for mantining a RH between 15% and 90 % in small chambers (e.g. 5 x 30 x 27 cm). The lowest RH depends on the HVAC of the bulting. 

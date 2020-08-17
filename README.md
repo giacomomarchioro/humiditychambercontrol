@@ -14,4 +14,6 @@ This repository contains the code and the schematics for a simple humid chamber 
 -   Bosh BMP280 (Optional: Temperature and Pressure sensor)
 ### Instructions
 Assembly the schematics as shown in the figure. Assure that the ultrasonic humidifer filled the reservoir before starting a new experiment. Using the Arduino IDE change `float target_HR =  50;` in `humiditychambercontrol/Arduino sketches/MicroclimateChamber_RH_T_P/MicroclimateChamber_RH_T_P.ino
-` to the desire target relative humidty and compile the file (sketch) into the microcontroller. Turn on the pump. The pump will be on untile the target relative humidty is reached and will try to keep it as stable as possible.
+` to the desire target relative humidty and compile the file (sketch) into the microcontroller. Turn on the pump. The pump will be on until the target relative humidty is reached and will try to keep it as stable as possible.
+
+`CCSerial2SQLite.py`can be used for saving the RH data coming from the Arduino to a SQLite database in the computer for using it the port must be modified depending on the port where the USB is connected.
